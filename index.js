@@ -157,9 +157,9 @@ app.get("/building-and-pest-pdf/:id", async (req, res) => {
 
             question.answers.value.forEach(answer => {
               questionSection.innerHTML += `${answer.blu_name.includes("SUB_Q:") ? "<p class='heading-three'>" + answer.blu_name + "</p>" : `<p><strong>${answer.blu_name} </strong>${answer.blu_supplementarytext == null ? '' : `<br/><span style="font-style: italic;margin-left:15px">${answer.blu_supplementarytext}</span>`}</p>`}`;
-              if (answer.blu_name.includes("Defect Rating: MAJOR DEFECT") || answer.blu_name.includes("Defect Rating: MAJOR DEFECTS") || answer.blu_name.includes("Defect Rating; MAJOR DEFECT")) major++;
-              if (answer.blu_name.includes("Defect Rating: MINOR DEFECT") || answer.blu_name.includes("Defect Rating: MINOR DEFECTS") || answer.blu_name.includes("Defect Rating; MINOR DEFECT")) minor++;
-              if (answer.blu_name.includes("Defect Rating: SAFETY HAZARD") || answer.blu_name.includes("Defect Rating: SAFETY HAZARDS") || answer.blu_name.includes("Defect Rating; SAFETY HAZARDS")) safety++;
+              if (answer.blu_name.includes(": MAJOR") || answer.blu_name.includes("; MAJOR")) major++;
+              if (answer.blu_name.includes(": MINOR") || answer.blu_name.includes("; MINOR")) minor++;
+              if (answer.blu_name.includes(": SAFETY") || answer.blu_name.includes("; SAFETY")) safety++;
 
 
               /*populating questions to the summary page of the report*/
