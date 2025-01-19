@@ -31,7 +31,7 @@ jobs:
       - name: Install Chromium
         run: |
           sudo apt-get update
-          sudo apt-get install -y chromium-bsu
+          sudo apt-get install -y chromium
 
       # 5. Set Puppeteer environment to use Chromium
       - name: Configure Puppeyteer
