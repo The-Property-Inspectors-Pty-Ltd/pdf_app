@@ -1,0 +1,53 @@
+.title {
+    color: #0F6CBD
+}
+
+.heading-one {
+    color: #0B5394;
+}
+.heading-three{
+    background-color: #C7E2FA; 
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.heading-two{
+    background-color: #0B5394; 
+    color: #EBF2F2; 
+    padding: 5px;
+}
+.heading-four{
+    color: #0B5394; 
+    border-top-style: solid;
+    border-top-width: .5px; 
+    padding: 5px; 
+    margin-top: 5px;
+}
+.front-page-image{
+    width: 40%;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.dotted {
+    border: 1px dotted #ff0000; 
+    border-style: none none dotted; 
+    color: #fff; 
+    background-color: #fff; 
+}
+
+.footer{
+    border-top-style: solid;
+    border-top-width: .5px;
+}
+.question-style{
+    color:red;
+    margin-top:20px;
+    margin-bottom:10px;
+    width:100%; 
+    border-top-style:solid;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #0B5394;
+    padding: 10px;
+}
