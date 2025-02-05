@@ -19,6 +19,8 @@
     "jquery": "^3.7.1",
     "jsdom": "^24.1.1",
     "nodemon": "^3.1.7",
+    "pdf-compressor": "^1.0.5",
+    "pdf-lib": "^1.17.1",
     "pdf-puppeteer": "^1.1.11",
     "puppeteer": "^23.6.0",
     "puppeteer-html-to-pdf": "^1.0.1",

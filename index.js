@@ -264,10 +264,14 @@ app.get("/building-and-pest-pdf/:id", async (req, res) => {
       timeout: 600000
     })
 
+    await browser.close();
+    //const optimizedPdf = require("./compress_pdf.js");
+    
+    //await  optimizedPdf("myfile.pdf", "optimized.pdf");
     // Send PDF to client
-    const pdfBuffer = fs.readFileSync("myfile.pdf");
+    const PdfBuffer = fs.readFileSync("myfile.pdf");
     res.contentType("application/pdf");
-    res.send(pdfBuffer).status(200);
+    res.send(PdfBuffer).status(200);
   } catch (error) {
     console.error("Error generating PDF:", error);
     res.send(error).status(500);
@@ -277,7 +281,7 @@ app.get("/building-and-pest-pdf/:id", async (req, res) => {
 
 
 
-app.get("/:id", async (req, res) => {
+app.get("plain/:id", async (req, res) => {
   try {
     // Fetch token and inspection details concurrently
     const acc_token = await data.getToken();

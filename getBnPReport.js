@@ -90,7 +90,7 @@ const mydataasync = function (odata_url,accessToken){
     return new Promise(resolve=>{
     setTimeout(function(){
          resolve(dataval);
-     },10000);
+     },30000);
     
     });
   }
